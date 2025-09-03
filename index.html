@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Profile - Cyberpunk Superhero</title>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0f;
+    color: #f5f5f5;
+    }
+    a {color: #00fff7; text-decoration: none;}
+    h1, h2, h3 {font-weight: 700;}
+
+    /* Header */
+    header {
+    position: fixed; top: 0; left: 0; width: 100%;
+    background: rgba(10,10,15,0.85);
+    padding: 15px 40px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid #00fff7;
+    z-index: 1000;
+    }
+    header .logo {
+    color: #00fff7; font-size: 22px; font-weight: bold;
+    text-shadow: 0 0 10px #00fff7;
+    }
+    nav a {margin-left: 20px; transition: 0.3s;}
+    nav a:hover {color: #ff00d4; text-shadow: 0 0 8px #ff00d4;}
+
+    /* Hero */
+    .hero {
+    height: 100vh;
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+    position: relative;
+    }
+    .hero::after {
+    content:""; position: absolute; inset:0;
+    background: rgba(10,10,15,0.7);
+    }
+    .hero-content {position: relative; z-index: 2;}
+    .hero h1 {
+    font-size: 48px;
+    color: #00fff7;
+    text-shadow: 0 0 20px #00fff7;
+    }
+    .hero p {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ff00d4;
+    text-shadow: 0 0 10px #ff00d4;
+    }
+
+    section {
+    padding: 80px 10%;
+    }
+    section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+    }
+
+    /* Tentang Saya */
+    .about {
+    display: flex; flex-wrap: wrap;
+    gap: 30px; align-items: center; justify-content: center;
+    }
+    .about img {
+    width: 280px; border-radius: 50%;
+    border: 3px solid #00fff7;
+    box-shadow: 0 0 20px #ff00d4;
+    }
+    .about-text {max-width: 500px; font-size: 16px;}
+    .about-text p {margin-bottom: 15px;}
+
+    /* Portofolio */
+    .portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 25px;
+    }
+    .port-box {
+    background: #111122;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ff00d4;
+    box-shadow: 0 0 15px #00fff7;
+    transition: 0.3s;
+    }
+    .port-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 25px #ff00d4;
+    }
+    .port-box img {
+    width: 100%; border-radius: 8px;
+    border: 2px solid #00fff7;
+    margin-bottom: 10px;
+    }
+    .port-box h3 {
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+    margin-bottom: 5px;
+    }
+    .port-box p {
+    font-size: 14px;
+    color: #ccc;
+    }
+
+    /* Footer */
+    footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #00fff7;
+    background: #0a0a0f;
+    }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">⚡ CyberHero</div>
+    <nav>
+    <a href="#hero">Beranda</a>
+    <a href="#about">Tentang</a>
+    <a href="#portfolio">Portofolio</a>
+    <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="hero-content">
+    <h1>Halo, Saya Niko Keandre Adinata</h1>
+    <p>Superhero Digital & Pengembang Web Futuristik</p>
+    </div>
+</section>
+
+<!-- Tentang Saya -->
+<section id="about">
+    <h2>Tentang Saya</h2>
+    <div class="about">
+    <div class="about-text">
+        <p>Saya Niko Keandre Adinata <b>pengembang web & desainer futuristik</b> yang menggabungkan seni, teknologi, dan kreativitas untuk menghadirkan pengalaman digital yang memukau.</p>
+        <p>Dengan gaya khas <span style="color:#ff00d4;">cyberpunk neon</span>, saya menciptakan website, aplikasi, dan desain yang bukan hanya fungsional tapi juga penuh energi visual.</p>
+        <p>Misi saya adalah membantu brand atau individu tampil lebih kuat di dunia digital, dengan sentuhan futuristik layaknya <b>superhero di era cyber</b>.</p>
+    </div>
+    </div>
+</section>
+
+<!-- Portofolio -->
+<section id="portfolio">
+    <h2>Portofolio</h2>
+    <div class="portfolio">
+    <div class="port-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzgKia2iaTgws7XBqMs5SwASiq5JsoBmuVLQ&s.jpg" alt="Project 1">
+        <h3>Website Cyberpunk</h3>
+        <p>Website dengan desain futuristik neon untuk brand teknologi.</p>
+    </div>
+    <div class="port-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTO4TZxuG-ibEFvZkh2-AgAHUD_nD-PZPzww&s.jpg" alt="Project 2">
+        <h3>UI Dashboard</h3>
+        <p>Dashboard interaktif dengan tema gelap & elemen glowing.</p>
+    </div>
+    <div class="port-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTizMf8iYRAs-qRUv2h_VRux4u3yCBAwmRFoQ&s.jpg" alt="Project 3">
+        <h3>Mobile App</h3>
+        <p>Aplikasi mobile dengan navigasi cyberpunk & animasi smooth.</p>
+    </div>
+    <div class="port-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxC2tGxD1Hwz4DMaI9V1KA0pgKfRLCjLKVDA&s.jpg" alt="Project 4">
+        <h3>Poster Digital</h3>
+        <p>Artwork poster neon bertema superhero masa depan.</p>
+    </div>
+    <div class="port-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwwixGFoLSoU0ThU9Ir4vEA9VioIed-NGG5nrqbCZoQFEZWHy2MKu_4_yZ&s=10.jpg" alt="Project 5">
+        <h3>Game Landing Page</h3>
+        <p>Website promosi game RPG futuristik dengan efek neon interaktif.</p>
+    </div>
+    <div class="port-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgjgPscV1ZTuxfLGzhuwCWDkHRaFOvg37KQ&s.jpg" alt="Project 6">
+        <h3>3D Hologram UI</h3>
+        <p>Eksperimen UI holografik 3D dengan efek glowing realistis.</p>
+    </div>
+    </div>
+</section>
+
+<!-- Kontak -->
+<section id="contact">
+    <h2>Kontak</h2>
+    <div class="contact" style="text-align:center;">
+    <p>Email: nikokeandreadinata123@gmail.com</p>
+    <p>Ikuti saya: 🌐 Website |📸 Instagram | 🐙 GitHub</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Niko Keandre Adinata. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
